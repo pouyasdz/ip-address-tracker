@@ -1,0 +1,49 @@
+/* laptop */
+@media only screen and (min-width:1024px){
+    html, body{
+        background-image: url(../../images/pattern-bg-desktop.png) !important;
+    }
+    main {
+        width: 80% !important;
+    }
+
+    main .input-group{
+        width: 40% !important;
+    }
+    main .input-group input {
+        width: 90% !important;
+    }
+    main .input-group button {
+        width: 10% !important;
+    }
+
+    main .output-box {
+        width: 100% !important;
+        height: 150px !important;
+        margin-top: 3rem !important;
+        align-items: center !important;
+        padding: 0 2rem !important;
+    }
+    main .output-box ul {
+        flex-direction: row !important;
+    }
+    main .output-box ul li {
+        width: max-content !important;
+        align-items: baseline !important;
+        padding-right: 3rem !important;
+        border-right: 1px solid hsl(0, 0%, 87%) !important;
+        
+    }
+    main .output-box ul li:last-child{
+        border: none !important;
+    }
+
+    #map{
+        height: 70% !important;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width:1440px){
+
+}
