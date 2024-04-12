@@ -14,36 +14,53 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <title>Frontend Mentor | IP Address Tracker</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        position: absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: max-content;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
   <body>
     <main>
       <h1>IP Address Tracker</h1>
 
-      <div class="input-group">
-        <input type="text" placeholder="Search for  any IP address or domain">
-        <button><img src="images/icon-arrow.svg" alt=""></button>
-      </div>
+      <form class="input-group" onsubmit="app.trackIpAddressByIp(event)">
+        <input  type="text" id="ip-inp" placeholder="Search for  any IP address or domain">
+        <button ><img src="images/icon-arrow.svg" alt=""></button>
+      </form>
 
       <div class="output-box">
         <ul>
           <li>
             <span>ip address</span>
-            <p>192.212.174.101</p>
+            <p id="ip-address">/p>
           </li>
 
           <li>
             <span>location</span>
-            <p>brooklyn, ny 10001</p>
+            <p id="location"></p>
           </li>
 
           <li>
             <span>timezone</span>
-            <p>UTC - 05:00</p>
+            <p id="time-zone"></p>
           </li>
 
           <li>
             <span>isp</span>
-            <p>spaceX starlink</p>
+            <p id="isp"></p>
           </li>
 
         </ul>
@@ -51,6 +68,12 @@
     </main>
     
     <div id="map"></div>
-    <script src="assets/js/leafletjs.js"></script>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Pouya Sadeghzadeh</a>.
+    </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
