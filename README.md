@@ -1,7 +1,7 @@
 # Frontend Mentor - IP address tracker
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
-
+[Live Preview](https://pouyasdz.github.io/ip-address-tracker/)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
